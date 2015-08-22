@@ -195,6 +195,7 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-
+#build js files
 ld33/app.js
-ld33/*.map
+ld33/states/*.js
+*.js.map
