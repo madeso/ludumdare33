@@ -198,4 +198,6 @@ FakesAssemblies/
 #build js files
 ld33/app.js
 ld33/states/*.js
+ld33/gameobjects/*.js
 *.js.map
+*autosave.kra

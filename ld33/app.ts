@@ -13,6 +13,7 @@
             this.game.load.image("titlescreen", "/assets/title.png");
 
             // spritesheets
+            this.game.load.spritesheet("player", "/assets/player.png", 128, 128);
 
             // audio
 
@@ -21,6 +22,7 @@
 
         create() {
             this.game.state.add("title", ld33.TitleState, true);
+            this.game.state.add("game", ld33.PlayState, false);
 
             this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         }
