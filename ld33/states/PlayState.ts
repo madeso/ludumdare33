@@ -15,6 +15,7 @@
             this.map.addTilesetImage('tiles', 'tiles');
             this.backgroundlayer = this.map.createLayer('ground');
             this.map.createLayer('buildings');
+            
             // blockedLayer = this.map.createLayer('blockedLayer');
             // map.setCollisionBetween(1, 100000, true, 'blockedLayer');
             this.backgroundlayer.resizeWorld();

@@ -74,12 +74,17 @@
 
         update() {
             var dx = 0.0;
+            var dy = 0.0;
             if (this.move_right) dx += 1;
             if (this.move_left) dx -= 1;
 
-            this.x += dx * (60 / this.game.time.elapsedMS);
+            if (this.move_up) dy -= 1;
+            if (this.move_down) dy += 1;
 
-            if (dx != 0) this.playWalking();
+            this.x += dx * (60 / this.game.time.elapsedMS);
+            this.y += dy * (60 / this.game.time.elapsedMS);
+
+            if (dx != 0 || dy != 0) this.playWalking();
             else this.playIdle();
 
             if (dx > 0) this.facing_right = true;
