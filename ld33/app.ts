@@ -10,16 +10,16 @@
 
         preload() {
             // title graphics
-            this.game.load.image("titlescreen", "/assets/title.png");
+            this.game.load.image("titlescreen", "assets/title.png");
 
             // spritesheets
-            this.game.load.spritesheet("player", "/assets/player.png", 128, 128);
+            this.game.load.spritesheet("player", "assets/player.png", 128, 128);
 
             // audio
 
             // levels
-            this.game.load.tilemap("level1", "/assets/level1.json", null, Phaser.Tilemap.TILED_JSON);
-            this.game.load.spritesheet("tiles", "/assets/tiles.png", 128, 128);
+            this.game.load.tilemap("level1", "assets/level1.json", null, Phaser.Tilemap.TILED_JSON);
+            this.game.load.spritesheet("tiles", "assets/tiles.png", 128, 128);
         }
 
         create() {
