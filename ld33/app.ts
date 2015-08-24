@@ -18,6 +18,8 @@
             // audio
 
             // levels
+            this.game.load.tilemap("level1", "/assets/level1.json", null, Phaser.Tilemap.TILED_JSON);
+            this.game.load.spritesheet("tiles", "/assets/tiles.png", 128, 128);
         }
 
         create() {
